@@ -27,7 +27,15 @@ vcpkg install rapidjson:x64-windows
 ```
 4. Install vscode
 5. install c++ extension and cmake extension pack vscode
-6. add CMAKElists.txt file as
+6. Add this to setting.json in vscode
+
+```
+ "cmake.configureSettings": {
+        "CMAKE_TOOLCHAIN_FILE": "D:/1907509MSC/vcpkg/scripts/buildsystems/vcpkg.cmake"
+      },
+```
+
+7. add CMAKElists.txt file as
 
 ```
 cmake_minimum_required(VERSION 3.0.0)
